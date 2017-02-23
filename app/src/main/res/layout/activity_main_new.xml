@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button android:id="@+id/MyBottemAddBtn"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/addlist"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="23dp"
+        android:clickable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/FramePager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Frame_BottemView"
+
+        >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/Frame_BottemView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/MyBottemSecretBtn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/MyBottemSecretImg"
+                    android:layout_width="28dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/login_pressed"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/MyBottemSecretTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密码"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MyBottemTxtBtn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/MyBottemTxtImg"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/day_normal"
+                    />
+                <TextView
+                    android:id="@+id/MyBottemTxtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="记事本"
+                    android:textSize="13dp"
+                    android:textColor="@color/silver"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|bottom"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/MyBottemAddTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MyBottemMemoBtn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/MyBottemMemoImg"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/memo_normal"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/MyBottemMemoTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备忘录"
+                    android:textSize="13dp"
+                    android:textColor="@color/silver"
+                    android:layout_marginTop="0dp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MyBottemMyBtn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/MyBottemMyImg"
+                    android:layout_width="28dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/my_normal"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/MyBottemMyTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的"
+                    android:textSize="13dp"
+                    android:textColor="@color/silver"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

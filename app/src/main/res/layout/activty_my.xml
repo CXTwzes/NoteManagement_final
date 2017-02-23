@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="0dp"
+            >
+
+            <ImageView android:id="@+id/myImg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/people"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/myImg"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp">
+                <TextView  android:id="@+id/myName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="left"
+                    android:text="用户名"
+                    android:textColor="@color/white"
+
+                    android:textSize="30dp"
+                    android:paddingLeft="10dp"
+
+                    />
+                <TextView  android:id="@+id/myUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="left"
+                    android:text="180-0199-7427"
+                    android:textColor="@color/white"
+
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    />
+            </LinearLayout>
+
+            <Button android:id="@+id/myTool"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wrong"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_gravity="center"/>
+                        <Button android:id="@+id/myNetSecretBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="备份密码"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:background="@drawable/select"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_gravity="center"/>
+                        <Button android:id="@+id/myNetTxtBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="备份记事本"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:background="@drawable/select"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_gravity="center"/>
+                        <Button android:id="@+id/myNetMemoBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="备份待办"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:background="@drawable/select"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:drawable/presence_away"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="恢复密码"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:background="@drawable/select"
+                            android:id="@+id/myRecoverBtn" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:drawable/presence_away"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="恢复记事本"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:background="@drawable/select"
+                            android:id="@+id/myRecoverTxtBtn" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:drawable/presence_away"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="恢复待办"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:background="@drawable/select"
+                            android:id="@+id/myRecoverMemoBtn" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/delete1"
+                            android:layout_gravity="center"/>
+                        <Button android:id="@+id/myDeleteBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="清空所有备份"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:background="@drawable/select"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/white"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:drawable/sym_action_call"
+                            android:layout_gravity="center"/>
+                        <Button android:id="@+id/mySmBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="声明"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:background="@drawable/select"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@android:drawable/presence_audio_online"
+                            android:layout_gravity="center"/>
+                        <Button android:id="@+id/myAboutBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="关于我们"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:background="@drawable/select"
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/silver"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="50dp"
+                        >
+
+                        <Button android:id="@+id/myOutBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="退出登录"
+                            android:background="#f14"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

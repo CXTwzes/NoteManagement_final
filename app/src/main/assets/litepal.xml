@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litapal>
+    <dbname value="Data" />
+    <version value="17" />
+    <list>
+        <mapping class="com.example.wzes.util.User">
+        </mapping>
+        <mapping class="com.example.wzes.util.secretData">
+        </mapping>
+        <mapping class="com.example.wzes.util.memoData">
+        </mapping>
+        <mapping class="com.example.wzes.util.txtData">
+        </mapping>
+
+    </list>
+</litapal>
